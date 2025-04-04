@@ -45,3 +45,36 @@ check_resources() {
 
 # Run the resource check
 check_resources
+📌 How This Works:
+Checks CPU, RAM, and Disk usage in real-time.
+
+Logs data in /var/log/resource_monitor.log.
+
+Sends an email alert if any threshold is exceeded.
+
+📂 Set Up Logging & Permissions
+Before running, ensure the log file exists and has correct permissions:
+
+bash
+Copy
+Edit
+sudo touch /var/log/resource_monitor.log
+sudo chmod 666 /var/log/resource_monitor.log
+📌 Run & Automate the Script
+Run manually:
+
+bash
+Copy
+Edit
+./monitor.sh
+Automate using Crontab (runs every 5 minutes):
+
+bash
+Copy
+Edit
+crontab -e
+
+bash
+Copy
+Edit
+*/5 * * * * /path/to/monitor.sh
