@@ -1,0 +1,19 @@
+# Ignore log files
+logs/
+*.log
+/var/log/resource_monitor.log
+
+# Ignore temporary files
+*.bak
+*.swp
+*.tmp
+*.~ 
+
+# Ignore compiled files
+*.o
+*.out
+*.exe
+
+# Ignore system files
+.DS_Store
+Thumbs.db
